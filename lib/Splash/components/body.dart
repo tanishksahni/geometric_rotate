@@ -86,9 +86,9 @@ class _BodyState extends State<Body> with TickerProviderStateMixin {
             return Transform(
               alignment: Alignment.center,
               transform: Matrix4.identity()
-                ..rotateX(_rotationAnimation.value)
-                ..rotateY(_rotationAnimation.value)
-                ..rotateZ(_rotationAnimation.value),
+                ..rotateX(_radiusAnimation.value)
+                ..rotateY(_radiusAnimation.value)
+                ..rotateZ(_radiusAnimation.value),
               child: CustomPaint(
                 painter: Polygon(sides: _sidesAnimation.value),
                 child: SizedBox(
